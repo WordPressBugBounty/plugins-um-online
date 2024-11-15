@@ -4,8 +4,8 @@ Plugin URI: https://ultimatemember.com/extensions/online-users/
 Contributors: ultimatemember, champsupertramp, nsinelnikov
 Tags: community, member, membership, user-profile
 Requires at least: 5.5
-Tested up to: 6.5
-Stable tag: 2.2.1
+Tested up to: 6.7
+Stable tag: 2.2.2
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 Requires UM core at least: 2.7.0
@@ -53,6 +53,10 @@ Got a problem or need help with Ultimate Member? Head over to our [documentation
 == Changelog ==
 
 = Important: Please update to Ultimate Member 2.1 before updating the extension =
+
+= 2.2.2: November 15, 2024 =
+
+* Fixed: "Load textdomain just in time" issue
 
 = 2.2.1: April 29, 2024 =
 

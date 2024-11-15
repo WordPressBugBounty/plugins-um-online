@@ -2,16 +2,16 @@
 # This file is distributed under the same license as the Ultimate Member - Online plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ultimate Member - Online 2.2.1\n"
+"Project-Id-Version: Ultimate Member - Online 2.2.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/online-users\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-04-29T11:00:42+00:00\n"
+"POT-Creation-Date: 2024-11-15T16:46:30+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.10.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: um-online\n"
 
 #. Plugin Name of the plugin
@@ -49,28 +49,28 @@ msgstr ""
 msgid "Show online stats in member directory"
 msgstr ""
 
-#: includes/core/class-online-common.php:132
-#: includes/core/class-online-common.php:135
+#: includes/core/class-online-common.php:143
 #: includes/core/class-online-common.php:146
-#: includes/core/class-online-common.php:149
+#: includes/core/class-online-common.php:157
+#: includes/core/class-online-common.php:160
 msgid "Show my online status?"
 msgstr ""
 
-#: includes/core/class-online-common.php:137
-#: includes/core/class-online-common.php:150
+#: includes/core/class-online-common.php:148
+#: includes/core/class-online-common.php:161
 msgid "Do you want other people to see that you are online?"
 msgstr ""
 
-#: includes/core/class-online-common.php:156
+#: includes/core/class-online-common.php:167
 msgid "Yes"
 msgstr ""
 
-#: includes/core/class-online-common.php:157
+#: includes/core/class-online-common.php:168
 msgid "No"
 msgstr ""
 
-#: includes/core/class-online-common.php:166
-#: includes/core/class-online-common.php:169
+#: includes/core/class-online-common.php:177
+#: includes/core/class-online-common.php:180
 #: includes/core/class-online-member-directory.php:80
 msgid "Online Status"
 msgstr ""

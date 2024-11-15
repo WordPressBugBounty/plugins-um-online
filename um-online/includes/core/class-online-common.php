@@ -19,7 +19,7 @@ class Online_Common {
 
 		add_action( 'wp_enqueue_scripts', array( &$this, 'wp_enqueue_scripts' ), 9999 );
 
-		add_action( 'um_after_profile_name_inline', array( &$this, 'um_online_show_user_status' ) );
+		add_action( 'um_after_profile_name_inline', array( &$this, 'um_online_show_user_status' ), 10, 2 );
 
 		add_filter( 'um_predefined_fields_hook', array( &$this, 'um_online_add_fields' ), 100, 1 );
 		add_filter( 'um_account_tab_privacy_fields', array( &$this, 'um_activity_account_online_fields' ), 10, 2 );
@@ -100,15 +100,26 @@ class Online_Common {
 	 * Show user online status beside name
 	 *
 	 * @param $args
+	 * @param $user_id
+	 *
+	 * @todo find the proper place for mailchimp marker in new UI.
 	 */
-	public function um_online_show_user_status( $args ) {
-		if ( $this->is_hidden_status( um_profile_id() ) ) {
+	public function um_online_show_user_status( $args, $user_id = null ) {
+		if ( defined( 'UM_DEV_MODE' ) && UM_DEV_MODE && UM()->options()->get( 'enable_new_ui' ) ) {
+			return;
+		}
+
+		if ( ! $user_id ) {
+			$user_id = um_profile_id();
+		}
+
+		if ( $this->is_hidden_status( $user_id ) ) {
 			return;
 		}
 
 		UM()->Online()->enqueue_scripts();
 
-		$args['is_online'] = UM()->Online()->is_online( um_profile_id() );
+		$args['is_online'] = UM()->Online()->is_online( $user_id );
 
 		ob_start();
 

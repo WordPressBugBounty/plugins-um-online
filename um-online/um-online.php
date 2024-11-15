@@ -3,7 +3,7 @@
  * Plugin Name: Ultimate Member - Online
  * Plugin URI: https://ultimatemember.com/extensions/online-users/
  * Description: Display online users and show the user online status on your site.
- * Version: 2.2.1
+ * Version: 2.2.2
  * Author: Ultimate Member
  * Author URI: http://ultimatemember.com/
  * Text Domain: um-online
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-$plugin_data = get_plugin_data( __FILE__ );
+$plugin_data = get_plugin_data( __FILE__, true, false );
 
 define( 'um_online_url', plugin_dir_url( __FILE__  ) );
 define( 'um_online_path', plugin_dir_path( __FILE__ ) );
